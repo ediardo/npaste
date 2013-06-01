@@ -21,8 +21,11 @@ class UsersController extends Controller {
         
     }
     function index(){
-        $result = $this->model->showAll();
-        
+        if($this->check_login()){
+            $result = $this->model->showAll();
+            
+        }
+
         
     }
     function add(){

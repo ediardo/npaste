@@ -8,8 +8,8 @@
 /**
  * Description of PastesController
  *
- * @author ediardo
- * 
+ * @author ediardoa
+ * a
  */
 class PastesController extends Controller{
     //put your code here

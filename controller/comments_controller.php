@@ -27,23 +27,32 @@ class CommentsController extends Controller {
      * @
      */
     function index(){
+             
+    }
+    function add(){
         if($this->check_login()){
             echo "si estas logeado";
             echo "el significado de la vida es 42";
         }else{
             echo "no estas logeado y no puedes ver nada";
-        }        
-    }
-    function add(){
-        
+        }   
     }
     
     function delete(){
-        
+        if($this->check_login()){
+            echo "si estas logeado";
+            echo "el significado de la vida es 42";
+        }else{
+            echo "no estas logeado y no puedes ver nada";
+        }   
     }
     
     function edit(){
-        
+        if($this->check_login()){
+            echo "Si puedes editar comentarios";
+        }else{
+            echo "no estas logeado y no puedes ver nada";
+        }   
     }
 }
 
